@@ -5,8 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <main>
+      <section class="color-container">
+        <div class="color"></div>
+      </section>
+      <section class="search-bar">
+        <div class="search-container">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/17216/17216943.png"
+            alt="magnifier"
+            class="magnifier"
+          />
+
+          <input type="text" class="search" placeholder="Search" />
+          <img
+            src="https://cdn2.iconfinder.com/data/icons/oneui/24/google_voice_search-512.png"
+            alt="microphone"
+            class="microph"
+          />
+        </div>
+      </section>
+      <section class="Pomodoro-timer">
+        <h2 class="timer" id="timer">25:00</h2>
+        <div class="btn-wraper">
+          <button class="start">Start</button>
+          <button class="stop">Stop</button>
+          <button class="reset">Reaset</button>
+        </div>
+      </section>
+      <section class="Age-calculator">
+        <label for="birthday" id="dob-label">Enter your date of birth</label>
+        <input type="date" id="birthday" name="birthday" />
+        <button id="age-btn">Calculate age</button>
+        <p id="resalt"></p>
+      </section>
+      <section class="video-film">
+        <div class="film-img">
+          <img
+            src="https://img.freepik.com/free-photo/young-confident-black-woman-with-crossed-arms-taking-part-protest-human-rights_637285-7159.jpg?uid=R138634140&ga=GA1.1.591189333.1741099882&semt=ais_hybrid"
+            alt="film"
+          />
+
+          <button class="film-open">
+            <i class="ri-movie-2-line"></i>
+          </button>
+        </div>
+
+        <div class="film-video">
+          <video class="video" src="video.mp4" controls></video>
+          <button class="film-close">
+            <i class="ri-close-line"></i>
+          </button>
+        </div>
+      </section>
+      <section class="drum-kits"></section>
+    </main>
     <script src="js.js"></script>
   </body>
 </html>
